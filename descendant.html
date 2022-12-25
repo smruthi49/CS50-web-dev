@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Descendant</title>
+        <style>
+            ul>li{
+                color: blue;
+            }
+            
+            a[href="https://facebook.com"]{
+                color: brown;
+            }
+
+            button{
+                width: 200px;
+                height: 50px;
+                font-size: 24px;
+                background-color: yellow;
+            }
+            button:hover{
+                background-color: orange;
+                opacity: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Specificity:
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <ul>
+                    <li>sub item 1</li>
+                    <li>sub item 2</li>
+                </ul>
+                <li>something else</li>
+            </ol>
+
+            <ul>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://amazon.com">Amazon</a></li>
+            </ul>
+        </h1>
+        Hello world, no impact
+
+        <button> Click me</button>
+    </body>
+
+</html>
